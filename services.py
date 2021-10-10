@@ -158,6 +158,10 @@ async def call_garanta_for_meeting(bot, message_obj, id_meeting):
         if meeting.get('second_member') and meeting.get('second_member') != 'None':
             await bot.send_message(meeting.get('first_member'), "Учасник вызвал гаранта, пожалуйста дождитесь его")
 
+    # Уведомляем админов
+    for admin in ADMINS:
+        await bot.send_message(admin, f"Сделка № {meeting.get('id_meeting')} <b>Вызвала гаранта</b>", parse_mode='html')
+
     return True
 #__________________________________________________________________________#
 
