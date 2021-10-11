@@ -185,6 +185,9 @@ async def Admin_sector_msg(message: types.Message, state: FSMContext):
 		await message.answer('Напишите сообщения для рассылки', reply_markup=back_key())
 		await Mailing_sector.text_mailing.set()
 
+	elif message.text == "/admin" and message.chat.id in ADMINS:
+		await message.answer("<b>Админ-панель</b>", reply_markup=admin_main_panel(), parse_mode='html')
+
 @dp.callback_query_handler(state=Admin_sector.box)
 async def Admin_sector_call(call: CallbackQuery, state: FSMContext):
 
