@@ -1,4 +1,4 @@
-API_BOT = '###'
+API_BOT = '2092141809:AAFv-K1GIkWzpLnZSfmmsircIhWbt91hyXI'
 ADMINS = [1526525522]
 
 TELEGRAM_CHANNEL = "https://t.me/garant4ek"
