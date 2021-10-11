@@ -1,5 +1,5 @@
 API_BOT = '2092141809:AAFv-K1GIkWzpLnZSfmmsircIhWbt91hyXI'
-ADMINS = [1526525522]
+ADMINS = [1526525522, 403607590]
 
 TELEGRAM_CHANNEL = "https://t.me/garant4ek"
 MENEDGER = "https://t.me/garant4ek"
